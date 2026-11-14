@@ -5,16 +5,16 @@
   "stage": "child",
   "stage_label": "すくすく期",
   "level": 3,
-  "xp": 80,
+  "xp": 100,
   "xp_next": 150,
   "stats": {
-    "hunger": 88,
-    "mood": 90,
+    "hunger": 100,
+    "mood": 95,
     "clean": 92,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 5,
+    "koudai": 6,
     "hong": 6
   },
   "items": [
@@ -101,7 +101,7 @@
   ],
   "avatar_path": "otter-pet/avatar-child-mochi.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-14T20:00:28+09:00",
+  "updated_at": "2026-11-14T23:43:35+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -180,6 +180,12 @@
       "actor": "koudai",
       "action": "🎮 お魚キャッチ（625点！）",
       "note": "625点の大漁おさかなをプレゼント！XP+60でクルミちゃんが大喜びです♪"
+    },
+    {
+      "time": "2026-11-14 23:43",
+      "actor": "koudai",
+      "action": "🐟 ごはん",
+      "note": "夜食のおさかなをプレゼント！おなか100%でクルミちゃんもごきげん♪"
     }
   ]
 }
