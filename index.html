@@ -308,6 +308,22 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .g-card.lock .g-now{display:none}
 .g-lock-txt{font-size:9.5px;font-weight:800;color:#a8c4c9;margin-left:auto;white-space:nowrap}
 
+/* ---------- sync ---------- */
+.sync-row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 11px}
+.sync-btn{
+  display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:800;color:#2f8fa3;
+  background:#eefafc;border:1px solid #d3eef3;border-radius:99px;padding:7px 13px;
+  font-family:inherit;box-shadow:0 3px 9px rgba(84,160,175,.10);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.sync-btn:active{transform:translateY(1px) scale(.985);box-shadow:0 2px 6px rgba(84,160,175,.12)}
+.sync-btn[disabled]{opacity:.55}
+.sync-btn.spin .ico{display:inline-block;animation:spin .9s linear infinite}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.sync-time{font-size:9.5px;color:#8fb1b8;font-weight:800;font-variant-numeric:tabular-nums;text-align:right;line-height:1.4}
+.sync-time.ok{color:#3f9fb0}
+.sync-time.err{color:#e2624c}
+
 /* ---------- game ---------- */
 .game-shell{position:relative;border-radius:20px;overflow:hidden;background:#a9e2ee;box-shadow:0 10px 24px rgba(72,150,168,.2)}
 #gameCanvas{display:block;width:100%;height:clamp(318px,54vh,408px);touch-action:none}
@@ -414,6 +430,10 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   <!-- ===== おへや ===== -->
   <section class="panel on" id="panel-room">
     <div class="card">
+      <div class="sync-row">
+        <button class="sync-btn" id="btnSync" type="button" aria-label="サーバーの最新データを読み込む"><span class="ico">🔄</span> 最新を読み込む</button>
+        <span class="sync-time" id="syncTime">きょうの ようす</span>
+      </div>
       <h2>🐾 からだのちょうし <span class="tag" id="moodTag">ごきげん</span></h2>
       <div id="gauges"></div>
     </div>
@@ -517,7 +537,8 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 
 <script>
 "use strict";
-const STATE = {"name":"なまえぼしゅう中","name_confirmed":false,"stage":"baby","stage_label":"あかちゃん","level":2,"xp":50,"xp_next":120,"stats":{"hunger":100,"mood":100,"clean":100,"bond":85},"care_counts":{"koudai":3,"hong":4},"items":["ちいさな貝殻","おさかなのおやつ","みずいろボール","あひるのおもちゃ"],"avatar_path":"otter-pet/avatar-baby-mochi-v2.png","logs":[{"time":"2026-11-14 12:28","actor":"system","action":"お迎え","note":"耕大さんと虹さんのおうちに小さなカワウソがやってきました！"},{"time":"2026-11-14 12:37","actor":"koudai","action":"🐟 ごはん","note":"初めてのお魚をあげました！おなかが100%に♪"},{"time":"2026-11-14 12:38","actor":"koudai","action":"🎾 あそぶ","note":"ボールでコロコロ遊びました！ごきげん100%に♪"},{"time":"2026-11-14 13:04","actor":"hong","action":"👋 なでなで（摸摸頭）","note":"虹さんが頭をなでなでしてくれました！なつき度がぐーんとアップ♪"},{"time":"2026-11-14 13:06","actor":"hong","action":"🐟 ごはん（餵飯）","note":"虹さんがボタンからごはんをあげてくれました！おなか100%・お世話回数も2回ずつに♪"},{"time":"2026-11-14 13:07","actor":"koudai","action":"🫧 おふろ","note":"あわあわお風呂でピッカピカ！ついにLv.2にレベルアップしました🎉"},{"time":"2026-11-14 13:07","actor":"hong","action":"👋 なでなで（摸摸頭）","note":"ボタンからなでなでしてくれました！なつき度が70%に＆お世話回数も3回ずつに♪"},{"time":"2026-11-14 13:09","actor":"hong","action":"👋 なでなで（摸摸頭）","note":"おかわりなでなで！なつき度が85%まで上がりました♪"}],"version":1,"created_at":"2026-11-14T12:28:00+09:00","updated_at":"2026-11-14T13:09:25+09:00"};
+const INITIAL_STATE = {"name":"なまえぼしゅう中","name_confirmed":false,"stage":"baby","stage_label":"あかちゃん","level":3,"xp":0,"xp_next":150,"stats":{"hunger":100,"mood":100,"clean":100,"bond":95},"care_counts":{"koudai":4,"hong":5},"items":["ちいさな貝殻","おさかなのおやつ","みずいろボール","あひるのおもちゃ","キラキラのアユ","🌈 にじいろの貝がら"],"avatar_path":"otter-pet/avatar-baby-mochi-v2.png","logs":[{"time":"2026-11-14 12:28","actor":"system","action":"お迎え","note":"耕大さんと虹さんのおうちに小さなカワウソがやってきました！"},{"time":"2026-11-14 12:37","actor":"koudai","action":"🐟 ごはん","note":"初めてのお魚をあげました！おなかが100%に♪"},{"time":"2026-11-14 12:38","actor":"koudai","action":"🎾 あそぶ","note":"ボールでコロコロ遊びました！ごきげん100%に♪"},{"time":"2026-11-14 13:04","actor":"hong","action":"👋 なでなで（摸摸頭）","note":"虹さんが頭をなでなでしてくれました！なつき度がぐーんとアップ♪"},{"time":"2026-11-14 13:06","actor":"hong","action":"🐟 ごはん（餵飯）","note":"虹さんがボタンからごはんをあげてくれました！おなか100%・お世話回数も2回ずつに♪"},{"time":"2026-11-14 13:07","actor":"koudai","action":"🫧 おふろ","note":"あわあわお風呂でピッカピカ！ついにLv.2にレベルアップしました🎉"},{"time":"2026-11-14 13:07","actor":"hong","action":"👋 なでなで（摸摸頭）","note":"ボタンからなでなでしてくれました！なつき度が70%に＆お世話回数も3回ずつに♪"},{"time":"2026-11-14 13:09","actor":"hong","action":"👋 なでなで（摸摸頭）","note":"おかわりなでなで！なつき度が85%まで上がりました♪"},{"time":"2026-11-14 14:02","actor":"koudai","action":"🎣 おさかなつり（あさせ）","note":"あさせでキラキラのアユを釣り上げました！XP+30・もちカワウソが大喜び♪"},{"time":"2026-11-14 14:03","actor":"hong","action":"🎣 おさかなつり（岩場）","note":"岩場でレアな「🌈 にじいろの貝がら」を発見！XP+40でついにLv.3にレベルアップしました🎉"}],"version":1,"created_at":"2026-11-14T12:28:00+09:00","updated_at":"2026-11-14T14:03:15+09:00"};
+let STATE = INITIAL_STATE;
 
 (function () {
   const $ = (sel, root) => (root || document).querySelector(sel);
@@ -526,19 +547,21 @@ const STATE = {"name":"なまえぼしゅう中","name_confirmed":false,"stage":
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
   const STAGE_NAMES = { baby: "あかちゃん", child: "こども", adult: "おとな" };
-  const stageName = (s) => STAGE_NAMES[s] || STATE.stage_label || "あかちゃん";
-  const lvl = Number(STATE.level) || 1;
-  const xp = Number(STATE.xp) || 0;
-  const xpNext = Number(STATE.xp_next) || 100;
+  const stageName = (s, st) => STAGE_NAMES[s] || (st && st.stage_label) || "あかちゃん";
+  const levelOf = (st) => Number(st && st.level) || 1;
+  const xpOf = (st) => Number(st && st.xp) || 0;
+  const xpNextOf = (st) => Number(st && st.xp_next) || 100;
 
   /* ---------- header ---------- */
-  $("#petName").textContent = STATE.name && STATE.name.trim() ? STATE.name : "なまえぼしゅう中";
-  if (!STATE.name_confirmed) $("#nameBadge").hidden = false;
-  $("#levelNum").textContent = lvl;
-  $("#stagePill").textContent = "🐣 " + stageName(STATE.stage);
-  const pct = clamp(Math.round((xp / xpNext) * 100), 0, 100);
-  $("#hdrXpFill").style.width = pct + "%";
-  $("#hdrXpText").textContent = xp + " / " + xpNext;
+  function renderHeader(st) {
+    $("#petName").textContent = st.name && st.name.trim() ? st.name : "なまえぼしゅう中";
+    $("#nameBadge").hidden = !!st.name_confirmed;
+    $("#levelNum").textContent = levelOf(st);
+    $("#stagePill").textContent = "🐣 " + stageName(st.stage, st);
+    const pct = clamp(Math.round((xpOf(st) / xpNextOf(st)) * 100), 0, 100);
+    $("#hdrXpFill").style.width = pct + "%";
+    $("#hdrXpText").textContent = xpOf(st) + " / " + xpNextOf(st);
+  }
 
   /* ---------- gauges ---------- */
   const GAUGES = [
@@ -547,111 +570,128 @@ const STATE = {"name":"なまえぼしゅう中","name_confirmed":false,"stage":
     { key: "clean", label: "せいけつ", icon: "🫧", c1: "#b6e9f7", c2: "#63c8e6" },
     { key: "bond", label: "なつき度", icon: "💗", c1: "#ffc9d9", c2: "#ff8fb0" }
   ];
-  const stats = STATE.stats || {};
   const gaugeBox = $("#gauges");
-  GAUGES.forEach((g) => {
-    const v = clamp(Math.round(Number(stats[g.key]) || 0), 0, 100);
-    const row = document.createElement("div");
-    row.className = "gauge";
-    const lbl = document.createElement("div");
-    lbl.className = "lbl";
-    const ic = document.createElement("i");
-    ic.textContent = g.icon;
-    lbl.appendChild(ic);
-    lbl.appendChild(document.createTextNode(g.label));
-    const bar = document.createElement("div");
-    bar.className = "bar";
-    const fill = document.createElement("div");
-    fill.className = "fill";
-    fill.style.background = "linear-gradient(90deg," + g.c1 + "," + g.c2 + ")";
-    bar.appendChild(fill);
-    const val = document.createElement("div");
-    val.className = "val";
-    val.textContent = v;
-    row.append(lbl, bar, val);
-    gaugeBox.appendChild(row);
-    requestAnimationFrame(() => { fill.style.width = v + "%"; });
-  });
-
   const moodTag = $("#moodTag");
-  const low = GAUGES.map((g) => ({ g: g, v: clamp(Number(stats[g.key]) || 0, 0, 100) }))
-    .sort((a, b) => a.v - b.v)[0];
-  if (low.v < 40) moodTag.textContent = low.g.label + "がすこし低め";
-  else moodTag.textContent = "ごきげん";
+  function renderGauges(st) {
+    const gStats = st.stats || {};
+    gaugeBox.innerHTML = "";
+    GAUGES.forEach((g) => {
+      const v = clamp(Math.round(Number(gStats[g.key]) || 0), 0, 100);
+      const row = document.createElement("div");
+      row.className = "gauge";
+      const lbl = document.createElement("div");
+      lbl.className = "lbl";
+      const ic = document.createElement("i");
+      ic.textContent = g.icon;
+      lbl.appendChild(ic);
+      lbl.appendChild(document.createTextNode(g.label));
+      const bar = document.createElement("div");
+      bar.className = "bar";
+      const fill = document.createElement("div");
+      fill.className = "fill";
+      fill.style.background = "linear-gradient(90deg," + g.c1 + "," + g.c2 + ")";
+      bar.appendChild(fill);
+      const val = document.createElement("div");
+      val.className = "val";
+      val.textContent = v;
+      row.append(lbl, bar, val);
+      gaugeBox.appendChild(row);
+      requestAnimationFrame(() => { fill.style.width = v + "%"; });
+    });
+
+    const low = GAUGES.map((g) => ({ g: g, v: clamp(Number(gStats[g.key]) || 0, 0, 100) }))
+      .sort((a, b) => a.v - b.v)[0];
+    if (low.v < 40) moodTag.textContent = low.g.label + "がすこし低め";
+    else moodTag.textContent = "ごきげん";
+  }
 
   /* ---------- xp ---------- */
-  $("#xpLevel").textContent = lvl;
-  $("#xpStage").textContent = stageName(STATE.stage);
-  $("#xpNum").textContent = xp + " / " + xpNext + " XP";
-  $("#xpPct").textContent = pct + "%";
-  $("#xpNext").textContent = "つぎのレベルまで あと " + Math.max(0, xpNext - xp);
-  requestAnimationFrame(() => { $("#xpFill").style.width = pct + "%"; });
-  $("#gLevel").textContent = lvl;
-  $("#gStage").textContent = stageName(STATE.stage);
-  $("#gNum").textContent = xp + " / " + xpNext + " XP";
-  requestAnimationFrame(() => { $("#gFill").style.width = pct + "%"; });
+  function renderXp(st) {
+    const lvl = levelOf(st);
+    const xp = xpOf(st);
+    const xpNext = xpNextOf(st);
+    const pct = clamp(Math.round((xp / xpNext) * 100), 0, 100);
+    $("#xpLevel").textContent = lvl;
+    $("#xpStage").textContent = stageName(st.stage, st);
+    $("#xpNum").textContent = xp + " / " + xpNext + " XP";
+    $("#xpPct").textContent = pct + "%";
+    $("#xpNext").textContent = "つぎのレベルまで あと " + Math.max(0, xpNext - xp);
+    requestAnimationFrame(() => { $("#xpFill").style.width = pct + "%"; });
+    $("#gLevel").textContent = lvl;
+    $("#gStage").textContent = stageName(st.stage, st);
+    $("#gNum").textContent = xp + " / " + xpNext + " XP";
+    requestAnimationFrame(() => { $("#gFill").style.width = pct + "%"; });
+  }
 
   /* ---------- care counts ---------- */
-  const care = STATE.care_counts || {};
-  $("#careKoudai").textContent = Number(care.koudai) || 0;
-  $("#careHong").textContent = Number(care.hong) || 0;
+  function renderCare(st) {
+    const care = st.care_counts || {};
+    $("#careKoudai").textContent = Number(care.koudai) || 0;
+    $("#careHong").textContent = Number(care.hong) || 0;
+  }
 
   /* ---------- items ---------- */
   const itemsBox = $("#items");
-  const items = Array.isArray(STATE.items) ? STATE.items : [];
-  if (items.length === 0) {
-    const c = document.createElement("span");
-    c.className = "chip empty";
-    c.textContent = "まだ なにもないよ";
-    itemsBox.appendChild(c);
-  } else {
-    items.forEach((it) => {
+  function renderItems(st) {
+    const items = Array.isArray(st.items) ? st.items : [];
+    itemsBox.innerHTML = "";
+    if (items.length === 0) {
       const c = document.createElement("span");
-      c.className = "chip";
-      c.textContent = "🐚 " + it;
+      c.className = "chip empty";
+      c.textContent = "まだ なにもないよ";
       itemsBox.appendChild(c);
-    });
+    } else {
+      items.forEach((it) => {
+        const c = document.createElement("span");
+        c.className = "chip";
+        c.textContent = "🐚 " + it;
+        itemsBox.appendChild(c);
+      });
+    }
   }
 
   /* ---------- timeline ---------- */
-  const logs = (Array.isArray(STATE.logs) ? STATE.logs : []).slice().reverse();
   const tl = $("#timeline");
   const ACT = {
     koudai: { icon: "🧑", label: "耕大" },
     hong: { icon: "🌈", label: "虹" },
     system: { icon: "🦦", label: "ようす" }
   };
-  if (logs.length === 0) {
-    const li = document.createElement("li");
-    const n = document.createElement("div");
-    n.className = "note";
-    n.textContent = "まだ記録がありません。";
-    li.appendChild(n);
-    tl.appendChild(li);
-  } else {
-    logs.slice(0, 40).forEach((log) => {
-      const a = ACT[log.actor] || ACT.system;
+  function renderTimeline(st) {
+    const logs = (Array.isArray(st.logs) ? st.logs : []).slice().reverse();
+    tl.innerHTML = "";
+    if (logs.length === 0) {
       const li = document.createElement("li");
-      const r1 = document.createElement("div");
-      r1.className = "row1";
-      const act = document.createElement("span");
-      act.className = "act";
-      act.textContent = a.icon + " " + (log.action || "おせわ");
-      const time = document.createElement("span");
-      time.className = "time";
-      time.textContent = (log.time || "") + (a.label !== "ようす" ? " · " + a.label : "");
-      r1.append(act, time);
-      li.appendChild(r1);
-      if (log.note) {
-        const note = document.createElement("div");
-        note.className = "note";
-        note.textContent = log.note;
-        li.appendChild(note);
-      }
+      const n = document.createElement("div");
+      n.className = "note";
+      n.textContent = "まだ記録がありません。";
+      li.appendChild(n);
       tl.appendChild(li);
-    });
+    } else {
+      logs.slice(0, 40).forEach((log) => {
+        const a = ACT[log.actor] || ACT.system;
+        const li = document.createElement("li");
+        const r1 = document.createElement("div");
+        r1.className = "row1";
+        const act = document.createElement("span");
+        act.className = "act";
+        act.textContent = a.icon + " " + (log.action || "おせわ");
+        const time = document.createElement("span");
+        time.className = "time";
+        time.textContent = (log.time || "") + (a.label !== "ようす" ? " · " + a.label : "");
+        r1.append(act, time);
+        li.appendChild(r1);
+        if (log.note) {
+          const note = document.createElement("div");
+          note.className = "note";
+          note.textContent = log.note;
+          li.appendChild(note);
+        }
+        tl.appendChild(li);
+      });
+    }
+    $("#logCount").textContent = logs.length + "件";
   }
-  $("#logCount").textContent = logs.length + "件";
 
   /* ---------- growth ---------- */
   const STAGES = [
@@ -660,45 +700,123 @@ const STATE = {"name":"なまえぼしゅう中","name_confirmed":false,"stage":
     { lv: 10, name: "おとな", key: "adult", desc: "りっぱなカワウソに。やさしい目でみんなを見守るよ。", locked: "Lv.10 で解放" }
   ];
   const gList = $("#growthList");
-  STAGES.forEach((s) => {
-    const unlocked = lvl >= s.lv;
-    const cur = lvl === s.lv || (lvl >= s.lv && (STAGES.filter((x) => lvl >= x.lv).pop() || {}).lv === s.lv);
-    const card = document.createElement("div");
-    card.className = "g-card" + (unlocked ? "" : " lock") + (cur ? " cur" : "");
-    const thumb = document.createElement("div");
-    thumb.className = "thumb";
-    const img = document.createElement("img");
-    img.src = document.getElementById("otterImg").getAttribute("src");
-    img.alt = s.name;
-    thumb.appendChild(img);
-    const body = document.createElement("div");
-    body.className = "g-body";
-    const top = document.createElement("div");
-    top.className = "g-top";
-    const nm = document.createElement("b");
-    nm.textContent = s.name;
-    const lvTag = document.createElement("span");
-    lvTag.className = "g-lv";
-    lvTag.textContent = "Lv." + s.lv;
-    top.append(nm, lvTag);
-    if (cur) {
-      const now = document.createElement("span");
-      now.className = "g-now";
-      now.textContent = "いまここ";
-      top.appendChild(now);
-    } else if (!unlocked) {
-      const lk = document.createElement("span");
-      lk.className = "g-lock-txt";
-      lk.textContent = s.locked;
-      top.appendChild(lk);
-    }
-    const desc = document.createElement("div");
-    desc.className = "g-desc";
-    desc.textContent = s.desc;
-    body.append(top, desc);
-    card.append(thumb, body);
-    gList.appendChild(card);
-  });
+  function renderGrowth(st) {
+    const lvl = levelOf(st);
+    gList.innerHTML = "";
+    STAGES.forEach((s) => {
+      const unlocked = lvl >= s.lv;
+      const cur = lvl === s.lv || (lvl >= s.lv && (STAGES.filter((x) => lvl >= x.lv).pop() || {}).lv === s.lv);
+      const card = document.createElement("div");
+      card.className = "g-card" + (unlocked ? "" : " lock") + (cur ? " cur" : "");
+      const thumb = document.createElement("div");
+      thumb.className = "thumb";
+      const img = document.createElement("img");
+      img.src = document.getElementById("otterImg").getAttribute("src");
+      img.alt = s.name;
+      thumb.appendChild(img);
+      const body = document.createElement("div");
+      body.className = "g-body";
+      const top = document.createElement("div");
+      top.className = "g-top";
+      const nm = document.createElement("b");
+      nm.textContent = s.name;
+      const lvTag = document.createElement("span");
+      lvTag.className = "g-lv";
+      lvTag.textContent = "Lv." + s.lv;
+      top.append(nm, lvTag);
+      if (cur) {
+        const now = document.createElement("span");
+        now.className = "g-now";
+        now.textContent = "いまここ";
+        top.appendChild(now);
+      } else if (!unlocked) {
+        const lk = document.createElement("span");
+        lk.className = "g-lock-txt";
+        lk.textContent = s.locked;
+        top.appendChild(lk);
+      }
+      const desc = document.createElement("div");
+      desc.className = "g-desc";
+      desc.textContent = s.desc;
+      body.append(top, desc);
+      card.append(thumb, body);
+      gList.appendChild(card);
+    });
+  }
+
+  /* ---------- 共通データ（state.json）の読み込み ---------- */
+  const SYNC_URL = "./state.json";
+  const syncBtn = $("#btnSync");
+  const syncTime = $("#syncTime");
+  let syncing = false;
+  let lastSyncAt = 0;
+
+  function pad2(n) { return n < 10 ? "0" + n : String(n); }
+
+  function renderAll(st) {
+    renderHeader(st);
+    renderGauges(st);
+    renderXp(st);
+    renderCare(st);
+    renderItems(st);
+    renderTimeline(st);
+    renderGrowth(st);
+  }
+
+  function applyState(next) {
+    if (!next || typeof next !== "object" || Array.isArray(next)) return false;
+    const before = JSON.stringify(STATE);
+    STATE = next;
+    renderAll(STATE);
+    if (typeof moodLine === "function") say(moodLine());
+    return JSON.stringify(STATE) !== before;
+  }
+
+  function markSync(ok, label) {
+    syncTime.className = "sync-time " + (ok ? "ok" : "err");
+    syncTime.textContent = label;
+  }
+
+  function syncFromServer(silent) {
+    if (syncing) return;
+    syncing = true;
+    syncBtn.disabled = true;
+    syncBtn.classList.add("spin");
+    if (!silent) syncTime.className = "sync-time";
+    if (!silent) syncTime.textContent = "よみこみ中…";
+    fetch(SYNC_URL + "?t=" + Date.now(), { cache: "no-store" })
+      .then((res) => {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then((data) => {
+        applyState(data);
+        lastSyncAt = Date.now();
+        const d = new Date();
+        markSync(true, pad2(d.getHours()) + ":" + pad2(d.getMinutes()) + " に こうしん");
+        if (!silent) toast("🔄 さいしんの ようすに したよ");
+      })
+      .catch(() => {
+        markSync(false, "いまは オフライン表示");
+        if (!silent) toast("いまは よみこめなかったよ");
+      })
+      .then(() => {
+        syncing = false;
+        syncBtn.disabled = false;
+        syncBtn.classList.remove("spin");
+      });
+  }
+
+  syncBtn.addEventListener("click", function () { syncFromServer(false); });
+
+  /* 画面に戻ってきたとき（60秒以上たっていれば）も静かに最新を取りに行く */
+  function autoSync() {
+    if (document.hidden) return;
+    if (Date.now() - lastSyncAt < 60000) return;
+    syncFromServer(true);
+  }
+  document.addEventListener("visibilitychange", autoSync);
+  window.addEventListener("focus", autoSync);
 
   /* ---------- stage: bubbles / speech / tap ---------- */
   const bubBox = $("#bubbles");
@@ -1117,8 +1235,12 @@ const STATE = {"name":"なまえぼしゅう中","name_confirmed":false,"stage":
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) G.pause();
   });
+  renderAll(STATE);
   fitCanvas();
   renderHud();
+
+  /* 起動時にもサーバーの共通データを取りに行く（file:// やオフラインなら埋め込み分のまま） */
+  syncFromServer(true);
 })();
 </script>
 </body>
