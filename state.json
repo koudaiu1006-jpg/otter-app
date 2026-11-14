@@ -5,16 +5,16 @@
   "stage": "child",
   "stage_label": "すくすく期",
   "level": 3,
-  "xp": 100,
+  "xp": 120,
   "xp_next": 150,
   "stats": {
     "hunger": 100,
-    "mood": 95,
-    "clean": 92,
+    "mood": 100,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 6,
+    "koudai": 7,
     "hong": 6
   },
   "items": [
@@ -101,7 +101,7 @@
   ],
   "avatar_path": "otter-pet/avatar-child-mochi.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-14T23:43:35+09:00",
+  "updated_at": "2026-11-14T23:44:05+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -186,6 +186,12 @@
       "actor": "koudai",
       "action": "🐟 ごはん",
       "note": "夜食のおさかなをプレゼント！おなか100%でクルミちゃんもごきげん♪"
+    },
+    {
+      "time": "2026-11-14 23:44",
+      "actor": "koudai",
+      "action": "🫧 おふろ",
+      "note": "寝る前のあわあわお風呂！せいけつもごきげんも100%でぴかぴかです♪"
     }
   ]
 }
