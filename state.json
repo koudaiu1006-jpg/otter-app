@@ -66,6 +66,11 @@
     "child": "otter-pet/avatar-child-mochi.png",
     "adult": "otter-pet/avatar-adult-mochi.png"
   },
+  "thumbs": {
+    "baby": "otter-pet/thumb-baby.png",
+    "child": "otter-pet/thumb-child.png",
+    "adult": "otter-pet/thumb-adult.png"
+  },
   "anims": {
     "child": "otter-pet/otter-child-anim.gif"
   },
