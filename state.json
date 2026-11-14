@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "なまえぼしゅう中",
-  "name_confirmed": false,
+  "name": "クルミ",
+  "name_confirmed": true,
   "stage": "child",
   "stage_label": "すくすく期",
   "level": 3,
@@ -94,7 +94,7 @@
   ],
   "avatar_path": "otter-pet/avatar-child-mochi.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-14T14:24:15+09:00",
+  "updated_at": "2026-11-14T14:50:10+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -161,6 +161,12 @@
       "actor": "hong",
       "action": "👋 なでなで（摸摸頭）",
       "note": "虹さんがなでなでしてくれました！なつき度が100%に達成＆XP+20♪"
+    },
+    {
+      "time": "2026-11-14 14:50",
+      "actor": "hong",
+      "action": "🌰 お名前決定「クルミ」",
+      "note": "虹さんが素敵な名前「クルミ」ちゃんを付けてくれました！これからよろしくね♪"
     }
   ]
 }
