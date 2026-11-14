@@ -1,33 +1,95 @@
 {
-  "version": 1,
+  "version": 2,
   "name": "なまえぼしゅう中",
   "name_confirmed": false,
-  "stage": "baby",
-  "stage_label": "あかちゃん",
+  "stage": "child",
+  "stage_label": "すくすく期",
   "level": 3,
-  "xp": 0,
+  "xp": 20,
   "xp_next": 150,
   "stats": {
     "hunger": 100,
     "mood": 100,
     "clean": 100,
-    "bond": 95
+    "bond": 100
   },
   "care_counts": {
     "koudai": 4,
-    "hong": 5
+    "hong": 6
   },
   "items": [
-    "ちいさな貝殻",
-    "おさかなのおやつ",
-    "みずいろボール",
-    "あひるのおもちゃ",
-    "キラキラのアユ",
-    "🌈 にじいろの貝がら"
+    {
+      "name": "ちいさな貝殻",
+      "emoji": "🐚",
+      "by": "both",
+      "memory": "おうちに きた ひの、さいしょの たからもの",
+      "at": "2026-11-14 12:28"
+    },
+    {
+      "name": "おさかなのおやつ",
+      "emoji": "🍥",
+      "by": "koudai",
+      "memory": "耕大さんが はじめて くれた おやつ。ぺろっと たべちゃった♪",
+      "at": "2026-11-14 12:37"
+    },
+    {
+      "name": "みずいろボール",
+      "emoji": "🎾",
+      "by": "koudai",
+      "memory": "コロコロ ころがして、いっぱい あそんだね",
+      "at": "2026-11-14 12:38"
+    },
+    {
+      "name": "あひるのおもちゃ",
+      "emoji": "🐤",
+      "by": "both",
+      "memory": "おふろで いっしょに ぷかぷか したよ",
+      "at": "2026-11-14 12:38"
+    },
+    {
+      "name": "キラキラのアユ",
+      "emoji": "🐟",
+      "by": "koudai",
+      "memory": "耕大さんが あさせで つりあげた アユ！キラキラしてる",
+      "at": "2026-11-14 14:02"
+    },
+    {
+      "name": "🌈 にじいろの貝がら",
+      "emoji": "🌈",
+      "by": "hong",
+      "memory": "虹さんが いわばで みつけた にじいろの たからもの！",
+      "at": "2026-11-14 14:03"
+    }
   ],
-  "avatar_path": "otter-pet/avatar-baby-mochi-v2.png",
+  "avatars": {
+    "baby": "otter-pet/avatar-baby-mochi-v2.png",
+    "child": "otter-pet/avatar-child-mochi.png",
+    "adult": "otter-pet/avatar-adult-mochi.png"
+  },
+  "anims": {
+    "child": "otter-pet/otter-child-anim.gif"
+  },
+  "avatars_extra": {
+    "child_blink": "otter-pet/avatar-child-mochi-blink.png",
+    "child_chirp": "otter-pet/avatar-child-mochi-chirp.png"
+  },
+  "stage_history": [
+    {
+      "stage": "baby",
+      "label": "あかちゃん",
+      "since": "2026-11-14 12:28",
+      "note": "耕大さんと虹さんのおうちに やってきた あかちゃん期"
+    },
+    {
+      "stage": "child",
+      "label": "すくすく期",
+      "since": "2026-11-14 14:03",
+      "note": "虹さんの にじいろの貝がらの おかげで Lv.3！にじいろの ポシェットを せおって すくすく期に しんか"
+    }
+  ],
+  "avatar_path": "otter-pet/avatar-child-mochi.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-14T14:03:15+09:00",
+  "updated_at": "2026-11-14T14:24:15+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -88,6 +150,12 @@
       "actor": "hong",
       "action": "🎣 おさかなつり（岩場）",
       "note": "岩場でレアな「🌈 にじいろの貝がら」を発見！XP+40でついにLv.3にレベルアップしました🎉"
+    },
+    {
+      "time": "2026-11-14 14:24",
+      "actor": "hong",
+      "action": "👋 なでなで（摸摸頭）",
+      "note": "虹さんがなでなでしてくれました！なつき度が100%に達成＆XP+20♪"
     }
   ]
 }
