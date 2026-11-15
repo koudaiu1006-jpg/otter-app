@@ -8,9 +8,9 @@
   "xp": 60,
   "xp_next": 200,
   "stats": {
-    "hunger": 76,
-    "mood": 65,
-    "clean": 68,
+    "hunger": 64,
+    "mood": 55,
+    "clean": 60,
     "bond": 100
   },
   "care_counts": {
@@ -108,7 +108,7 @@
   ],
   "avatar_path": "otter-pet/avatar-child-mochi.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-15T17:00:40+09:00",
+  "updated_at": "2026-11-15T20:00:52+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
