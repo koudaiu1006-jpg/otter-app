@@ -5,16 +5,16 @@
   "stage": "child",
   "stage_label": "すくすく期",
   "level": 4,
-  "xp": 80,
+  "xp": 120,
   "xp_next": 200,
   "stats": {
-    "hunger": 40,
+    "hunger": 100,
     "mood": 100,
-    "clean": 44,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 10,
+    "koudai": 12,
     "hong": 6
   },
   "items": [
@@ -217,6 +217,18 @@
       "actor": "koudai",
       "action": "🎾 あそぶ",
       "note": "ボール遊びでごきげん100%に！クルミちゃんも大はしゃぎです♪"
+    },
+    {
+      "time": "2026-11-16 11:04",
+      "actor": "koudai",
+      "action": "🐟 ごはん（マグロ丼）",
+      "note": "耕大さんから特製マグロ丼のプレゼント！おなか100%で大満足♪"
+    },
+    {
+      "time": "2026-11-16 11:04",
+      "actor": "koudai",
+      "action": "🫧 おそうじ・おふろ",
+      "note": "きれいにお掃除＆あわあわお風呂でせいけつ100%に！ぴかぴかです♪"
     }
   ]
 }
