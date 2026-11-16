@@ -5,16 +5,16 @@
   "stage": "child",
   "stage_label": "すくすく期",
   "level": 4,
-  "xp": 60,
+  "xp": 80,
   "xp_next": 200,
   "stats": {
     "hunger": 40,
-    "mood": 35,
+    "mood": 100,
     "clean": 44,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 9,
+    "koudai": 10,
     "hong": 6
   },
   "items": [
@@ -211,6 +211,12 @@
       "actor": "koudai",
       "action": "🐟 ごはん",
       "note": "おひるのおさかなをプレゼント！おなか100%でクルミちゃんもにっこり♪"
+    },
+    {
+      "time": "2026-11-16 11:03",
+      "actor": "koudai",
+      "action": "🎾 あそぶ",
+      "note": "ボール遊びでごきげん100%に！クルミちゃんも大はしゃぎです♪"
     }
   ]
 }
