@@ -120,8 +120,9 @@
     }
   ],
   "avatar_path": "otter-pet/avatar-adult-mochi.png",
+  "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-17T14:04:30+09:00",
+  "updated_at": "2026-11-17T14:07:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -266,6 +267,12 @@
       "actor": "hong",
       "action": "🫧 おふろ",
       "note": "虹さんがあわあわお風呂に入れてくれてせいけつ100%に！XP+20でついにLv.5「おとな期」へ進化しました🎉🌟"
+    },
+    {
+      "time": "2026-11-17 14:07",
+      "actor": "koudai",
+      "action": "🍁 お部屋の模様替え（和室）",
+      "note": "紅葉が見える温かな和室へ模様替え！クルミちゃんも畳の上でくつろいでいます♪"
     }
   ]
 }
