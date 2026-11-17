@@ -5,17 +5,17 @@
   "stage": "child",
   "stage_label": "すくすく期",
   "level": 4,
-  "xp": 140,
+  "xp": 180,
   "xp_next": 200,
   "stats": {
     "hunger": 100,
-    "mood": 40,
+    "mood": 100,
     "clean": 52,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 13,
-    "hong": 6
+    "koudai": 14,
+    "hong": 7
   },
   "items": [
     {
@@ -108,7 +108,7 @@
   ],
   "avatar_path": "otter-pet/avatar-child-mochi.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-17T14:02:00+09:00",
+  "updated_at": "2026-11-17T14:03:30+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -235,6 +235,18 @@
       "actor": "koudai",
       "action": "🐟 ごはん",
       "note": "おひるのおさかなをプレゼント！おなか100%でクルミちゃんもにっこり♪"
+    },
+    {
+      "time": "2026-11-17 14:03",
+      "actor": "koudai",
+      "action": "🎾 あそぶ",
+      "note": "ボールでいっぱい遊んでごきげん100%に！クルミちゃんも大はしゃぎです♪"
+    },
+    {
+      "time": "2026-11-17 14:03",
+      "actor": "hong",
+      "action": "🐟 ごはん（餵飯）",
+      "note": "虹さんがおやつのおさかなをあげてくれました！耕大さんのごはんとあわせておなか100%・ますますにっこり♪"
     }
   ]
 }
