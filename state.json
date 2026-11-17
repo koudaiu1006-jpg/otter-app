@@ -2,20 +2,20 @@
   "version": 2,
   "name": "クルミ",
   "name_confirmed": true,
-  "stage": "child",
-  "stage_label": "すくすく期",
-  "level": 4,
-  "xp": 180,
-  "xp_next": 200,
+  "stage": "adult",
+  "stage_label": "おとな期",
+  "level": 5,
+  "xp": 0,
+  "xp_next": 300,
   "stats": {
     "hunger": 100,
     "mood": 100,
-    "clean": 52,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
     "koudai": 14,
-    "hong": 7
+    "hong": 8
   },
   "items": [
     {
@@ -73,6 +73,13 @@
       "by": "koudai",
       "memory": "お魚キャッチ761点の新記録！このお魚でクルミちゃんがLv.4にレベルアップ🎉",
       "at": "2026-11-15 06:37"
+    },
+    {
+      "name": "🌟 おとなの虹色ネックレス",
+      "emoji": "🌟",
+      "by": "hong",
+      "memory": "虹さんのあわあわお風呂でLv.5に進化！おとな期のしるしのにじいろネックレスだよ♪",
+      "at": "2026-11-17 14:04"
     }
   ],
   "avatars": {
@@ -104,11 +111,17 @@
       "label": "すくすく期",
       "since": "2026-11-14 14:03",
       "note": "虹さんの にじいろの貝がらの おかげで Lv.3！にじいろの ポシェットを せおって すくすく期に しんか"
+    },
+    {
+      "stage": "adult",
+      "label": "おとな期",
+      "since": "2026-11-17 14:04",
+      "note": "虹さんの おふろで ついに Lv.5！にじいろの ネックレスを つけた おとな期に しんか🌟"
     }
   ],
-  "avatar_path": "otter-pet/avatar-child-mochi.png",
+  "avatar_path": "otter-pet/avatar-adult-mochi.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-17T14:03:30+09:00",
+  "updated_at": "2026-11-17T14:04:30+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -247,6 +260,12 @@
       "actor": "hong",
       "action": "🐟 ごはん（餵飯）",
       "note": "虹さんがおやつのおさかなをあげてくれました！耕大さんのごはんとあわせておなか100%・ますますにっこり♪"
+    },
+    {
+      "time": "2026-11-17 14:04",
+      "actor": "hong",
+      "action": "🫧 おふろ",
+      "note": "虹さんがあわあわお風呂に入れてくれてせいけつ100%に！XP+20でついにLv.5「おとな期」へ進化しました🎉🌟"
     }
   ]
 }
