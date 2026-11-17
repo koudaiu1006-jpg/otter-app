@@ -8,9 +8,9 @@
   "xp": 0,
   "xp_next": 300,
   "stats": {
-    "hunger": 76,
-    "mood": 80,
-    "clean": 84,
+    "hunger": 64,
+    "mood": 70,
+    "clean": 76,
     "bond": 100
   },
   "care_counts": {
@@ -122,7 +122,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-17T20:00:38+09:00",
+  "updated_at": "2026-11-18T08:02:29+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
