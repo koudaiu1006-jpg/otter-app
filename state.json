@@ -299,5 +299,13 @@
       "action": "🐶 お友達来訪（むぎ）",
       "note": "コーギーの「むぎ」ちゃんが筑波山の方から遊びに来ました！和室でしっぽをふりふり追いかけっこして、ごきげん100%に♪"
     }
-  ]
+  ],
+  "current_friend": {
+    "name": "むぎ",
+    "species": "コーギー",
+    "emoji": "🐶",
+    "image_path": "otter-pet/friend-corgi-transparent.png",
+    "speech": "わんっ♪ クルミちゃんと あそぶの たのしい！",
+    "until": "2026-11-18 20:00"
+  }
 }
