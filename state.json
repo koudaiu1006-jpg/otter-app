@@ -5,12 +5,12 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 70,
+  "xp": 90,
   "xp_next": 300,
   "stats": {
-    "hunger": 88,
-    "mood": 90,
-    "clean": 92,
+    "hunger": 76,
+    "mood": 95,
+    "clean": 84,
     "bond": 100
   },
   "care_counts": {
@@ -87,6 +87,13 @@
       "by": "both",
       "memory": "お友達のコーギー「むぎ」が遊びに来たときのおみやげ♪",
       "at": "2026-11-18 17:39"
+    },
+    {
+      "name": "🍁 もみじのしおり",
+      "emoji": "🍁",
+      "by": "both",
+      "memory": "お友達のシマエナガ「ゆきみ」が遊びに来たときのおみやげ♪",
+      "at": "2026-11-19 08:00"
     }
   ],
   "avatars": {
@@ -129,7 +136,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-18T20:01:19+09:00",
+  "updated_at": "2026-11-19T08:00:38+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -298,7 +305,20 @@
       "actor": "both",
       "action": "🐶 お友達来訪（むぎ）",
       "note": "コーギーの「むぎ」ちゃんが筑波山の方から遊びに来ました！和室でしっぽをふりふり追いかけっこして、ごきげん100%に♪"
+    },
+    {
+      "time": "2026-11-19 08:00",
+      "actor": "both",
+      "action": "🐦 お友達来訪（ゆきみ）",
+      "note": "もふもふのシマエナガ「ゆきみ」ちゃんが遊びに来ました！クルミちゃんとおしゃべりしてごきげんアップ♪"
     }
   ],
-  "current_friend": null
+  "current_friend": {
+    "name": "ゆきみ",
+    "species": "シマエナガ",
+    "emoji": "🐦",
+    "image_path": "otter-pet/friend-shimaenaga-transparent.png",
+    "speech": "ちゅん♪ クルミちゃんのおへや あったかいね！",
+    "until": "2026-11-19 11:00"
+  }
 }
