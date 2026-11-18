@@ -5,17 +5,17 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 110,
+  "xp": 130,
   "xp_next": 300,
   "stats": {
     "hunger": 100,
     "mood": 100,
-    "clean": 84,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
     "koudai": 16,
-    "hong": 9
+    "hong": 10
   },
   "items": [
     {
@@ -136,7 +136,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-19T08:09:19+09:00",
+  "updated_at": "2026-11-19T08:15:01+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -317,6 +317,12 @@
       "actor": "hong",
       "action": "🐟 ごはん（ゆきみちゃんと一緒♪）",
       "note": "虹さんがクルミちゃんとシマエナガのゆきみちゃんにおいしいごはんをあげてくれました！ふたり仲良くもぐもぐ食べて、おなかもごきげんも100%です♪"
+    },
+    {
+      "time": "2026-11-19 08:15",
+      "actor": "hong",
+      "action": "🫧 おふろ",
+      "note": "虹さんがあわあわのお風呂に入れてくれて、せいけつ100%に！クルミちゃんもぽかぽか気持ちよさそうです♪"
     }
   ],
   "current_friend": {
