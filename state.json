@@ -5,16 +5,16 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 20,
+  "xp": 40,
   "xp_next": 300,
   "stats": {
     "hunger": 100,
-    "mood": 55,
-    "clean": 52,
+    "mood": 70,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 15,
+    "koudai": 16,
     "hong": 8
   },
   "items": [
@@ -122,7 +122,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-18T17:37:31+09:00",
+  "updated_at": "2026-11-18T17:37:56+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -279,6 +279,12 @@
       "actor": "koudai",
       "action": "🐟 ごはん",
       "note": "筑波山からおいしいおさかなのプレゼント！おなか100%でクルミちゃんもにっこり♪"
+    },
+    {
+      "time": "2026-11-18 17:38",
+      "actor": "koudai",
+      "action": "🫧 おそうじ",
+      "note": "和室をきれいにお掃除！せいけつ100%で気持ちよさそうにしています♪"
     }
   ]
 }
