@@ -5,11 +5,11 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 40,
+  "xp": 70,
   "xp_next": 300,
   "stats": {
     "hunger": 100,
-    "mood": 70,
+    "mood": 100,
     "clean": 100,
     "bond": 100
   },
@@ -80,6 +80,13 @@
       "by": "hong",
       "memory": "虹さんのあわあわお風呂でLv.5に進化！おとな期のしるしのにじいろネックレスだよ♪",
       "at": "2026-11-17 14:04"
+    },
+    {
+      "name": "🍪 肉球クッキー",
+      "emoji": "🍪",
+      "by": "both",
+      "memory": "お友達のコーギー「むぎ」が遊びに来たときのおみやげ♪",
+      "at": "2026-11-18 17:39"
     }
   ],
   "avatars": {
@@ -122,7 +129,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-18T17:37:56+09:00",
+  "updated_at": "2026-11-18T17:38:51+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -285,6 +292,12 @@
       "actor": "koudai",
       "action": "🫧 おそうじ",
       "note": "和室をきれいにお掃除！せいけつ100%で気持ちよさそうにしています♪"
+    },
+    {
+      "time": "2026-11-18 17:39",
+      "actor": "both",
+      "action": "🐶 お友達来訪（むぎ）",
+      "note": "コーギーの「むぎ」ちゃんが筑波山の方から遊びに来ました！和室でしっぽをふりふり追いかけっこして、ごきげん100%に♪"
     }
   ]
 }
