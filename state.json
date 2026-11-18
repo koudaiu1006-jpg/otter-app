@@ -5,17 +5,17 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 90,
+  "xp": 110,
   "xp_next": 300,
   "stats": {
-    "hunger": 76,
-    "mood": 95,
+    "hunger": 100,
+    "mood": 100,
     "clean": 84,
     "bond": 100
   },
   "care_counts": {
     "koudai": 16,
-    "hong": 8
+    "hong": 9
   },
   "items": [
     {
@@ -136,7 +136,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-19T08:00:38+09:00",
+  "updated_at": "2026-11-19T08:09:19+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -311,6 +311,12 @@
       "actor": "both",
       "action": "🐦 お友達来訪（ゆきみ）",
       "note": "もふもふのシマエナガ「ゆきみ」ちゃんが遊びに来ました！クルミちゃんとおしゃべりしてごきげんアップ♪"
+    },
+    {
+      "time": "2026-11-19 08:09",
+      "actor": "hong",
+      "action": "🐟 ごはん（ゆきみちゃんと一緒♪）",
+      "note": "虹さんがクルミちゃんとシマエナガのゆきみちゃんにおいしいごはんをあげてくれました！ふたり仲良くもぐもぐ食べて、おなかもごきげんも100%です♪"
     }
   ],
   "current_friend": {
@@ -318,7 +324,7 @@
     "species": "シマエナガ",
     "emoji": "🐦",
     "image_path": "otter-pet/friend-shimaenaga-transparent.png",
-    "speech": "ちゅん♪ クルミちゃんのおへや あったかいね！",
+    "speech": "もぐもぐ…おいしいね♪ 虹さんありがとう！",
     "until": "2026-11-19 11:00"
   }
 }
