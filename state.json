@@ -5,16 +5,16 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 150,
+  "xp": 170,
   "xp_next": 300,
   "stats": {
-    "hunger": 28,
-    "mood": 55,
+    "hunger": 100,
+    "mood": 100,
     "clean": 52,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 16,
+    "koudai": 17,
     "hong": 10
   },
   "items": [
@@ -143,7 +143,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-20T11:00:57+09:00",
+  "updated_at": "2026-11-20T11:08:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -336,6 +336,12 @@
       "actor": "both",
       "action": "🦝 お友達来訪（くるん）",
       "note": "レッサーパンダの「くるん」ちゃんが遊びに来ました！しゃきしゃきりんごを食べてごきげんアップ♪"
+    },
+    {
+      "time": "2026-11-20 11:08",
+      "actor": "koudai",
+      "action": "🍰 ごはん（ケーキ）",
+      "note": "耕大さんから甘いケーキのプレゼント！おなかもごきげんも100%で大喜びです♪"
     }
   ],
   "current_friend": null
