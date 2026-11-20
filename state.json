@@ -5,17 +5,17 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 170,
+  "xp": 190,
   "xp_next": 300,
   "stats": {
     "hunger": 100,
     "mood": 100,
-    "clean": 52,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
     "koudai": 17,
-    "hong": 10
+    "hong": 11
   },
   "items": [
     {
@@ -143,7 +143,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-20T11:08:00+09:00",
+  "updated_at": "2026-11-20T12:40:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -342,6 +342,12 @@
       "actor": "koudai",
       "action": "🍰 ごはん（ケーキ）",
       "note": "耕大さんから甘いケーキのプレゼント！おなかもごきげんも100%で大喜びです♪"
+    },
+    {
+      "time": "2026-11-20 12:40",
+      "actor": "hong",
+      "action": "🫧 おふろ",
+      "note": "虹さんがあわあわお風呂に入れてくれました！せいけつ100%になって、クルミちゃんもぴかぴかごきげんです♪"
     }
   ],
   "current_friend": null
