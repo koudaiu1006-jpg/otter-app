@@ -5,12 +5,12 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 210,
+  "xp": 230,
   "xp_next": 300,
   "stats": {
-    "hunger": 100,
-    "mood": 60,
-    "clean": 52,
+    "hunger": 88,
+    "mood": 65,
+    "clean": 44,
     "bond": 100
   },
   "care_counts": {
@@ -101,6 +101,13 @@
       "by": "both",
       "memory": "お友達のレッサーパンダ「くるん」が遊びに来たときのおみやげ♪",
       "at": "2026-11-19 20:04"
+    },
+    {
+      "name": "🌰 ほくほく焼き栗",
+      "emoji": "🌰",
+      "by": "both",
+      "memory": "お友達のきつね「こんた」が遊びに来たときのおみやげ♪",
+      "at": "2026-11-21 17:00"
     }
   ],
   "avatars": {
@@ -143,7 +150,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-21T14:03:45+09:00",
+  "updated_at": "2026-11-21T17:00:37+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -354,7 +361,20 @@
       "actor": "koudai",
       "action": "🐟 ごはん",
       "note": "耕大さんがおいしいお魚をあげてくれました！おなか100%になって大満足です♪"
+    },
+    {
+      "time": "2026-11-21 17:00",
+      "actor": "both",
+      "action": "🦊 お友達来訪（こんた）",
+      "note": "きつねの「こんた」くんが遊びに来ました！秋の香りの焼き栗を分け合ってごきげんアップ♪"
     }
   ],
-  "current_friend": null
+  "current_friend": {
+    "name": "こんた",
+    "species": "きつね",
+    "emoji": "🦊",
+    "image_path": "otter-pet/friend-corgi-transparent.png",
+    "speech": "あそびにきたよ♪",
+    "until": "2026-11-21 20:00"
+  }
 }
