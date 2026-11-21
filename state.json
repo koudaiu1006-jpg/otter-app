@@ -5,16 +5,16 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 5,
-  "xp": 230,
+  "xp": 290,
   "xp_next": 300,
   "stats": {
-    "hunger": 88,
-    "mood": 65,
+    "hunger": 100,
+    "mood": 85,
     "clean": 44,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 18,
+    "koudai": 19,
     "hong": 11
   },
   "items": [
@@ -150,7 +150,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-21T17:00:37+09:00",
+  "updated_at": "2026-11-21T17:04:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -367,6 +367,12 @@
       "actor": "both",
       "action": "🦊 お友達来訪（こんた）",
       "note": "きつねの「こんた」くんが遊びに来ました！秋の香りの焼き栗を分け合ってごきげんアップ♪"
+    },
+    {
+      "time": "2026-11-21 17:04",
+      "actor": "koudai",
+      "action": "🎮 お魚キャッチ（663点！）",
+      "note": "663点の大漁おさかなをプレゼント！おなか100%＆XP+60でクルミちゃんもこんたくんも大喜びです♪"
     }
   ],
   "current_friend": {
