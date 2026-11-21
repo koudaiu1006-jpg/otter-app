@@ -4,17 +4,17 @@
   "name_confirmed": true,
   "stage": "adult",
   "stage_label": "おとな期",
-  "level": 5,
-  "xp": 290,
-  "xp_next": 300,
+  "level": 6,
+  "xp": 20,
+  "xp_next": 350,
   "stats": {
     "hunger": 100,
-    "mood": 85,
-    "clean": 44,
+    "mood": 100,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 19,
+    "koudai": 20,
     "hong": 11
   },
   "items": [
@@ -108,6 +108,13 @@
       "by": "both",
       "memory": "お友達のきつね「こんた」が遊びに来たときのおみやげ♪",
       "at": "2026-11-21 17:00"
+    },
+    {
+      "name": "🤖 ぴかぴかルンバ",
+      "emoji": "🤖",
+      "by": "koudai",
+      "memory": "耕大さんが和室にルンバを導入！上に乗ってクルクル回るのがお気に入り♪",
+      "at": "2026-11-21 17:05"
     }
   ],
   "avatars": {
@@ -150,7 +157,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-21T17:04:00+09:00",
+  "updated_at": "2026-11-21T17:05:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -373,6 +380,12 @@
       "actor": "koudai",
       "action": "🎮 お魚キャッチ（663点！）",
       "note": "663点の大漁おさかなをプレゼント！おなか100%＆XP+60でクルミちゃんもこんたくんも大喜びです♪"
+    },
+    {
+      "time": "2026-11-21 17:05",
+      "actor": "koudai",
+      "action": "🤖 ルンバ導入（おそうじ）",
+      "note": "和室にルンバを導入！お部屋がピカピカになってせいけつ100%・Lv.6にレベルアップしました🎉"
     }
   ],
   "current_friend": {
