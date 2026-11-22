@@ -8,9 +8,9 @@
   "xp": 40,
   "xp_next": 350,
   "stats": {
-    "hunger": 76,
-    "mood": 95,
-    "clean": 84,
+    "hunger": 64,
+    "mood": 85,
+    "clean": 76,
     "bond": 100
   },
   "care_counts": {
@@ -157,7 +157,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-22T08:01:33+09:00",
+  "updated_at": "2026-11-22T11:01:10+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -394,12 +394,5 @@
       "note": "きつねの「こんた」くんが遊びに来ました！秋の香りの焼き栗を分け合ってごきげんアップ♪"
     }
   ],
-  "current_friend": {
-    "name": "こんた",
-    "species": "きつね",
-    "emoji": "🦊",
-    "image_path": "otter-pet/friend-corgi-transparent.png",
-    "speech": "あそびにきたよ♪",
-    "until": "2026-11-22 11:01"
-  }
+  "current_friend": null
 }
