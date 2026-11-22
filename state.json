@@ -5,17 +5,17 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 55,
+  "xp": 70,
   "xp_next": 350,
   "stats": {
     "hunger": 100,
-    "mood": 70,
+    "mood": 85,
     "clean": 52,
     "bond": 100
   },
   "care_counts": {
     "koudai": 21,
-    "hong": 11
+    "hong": 12
   },
   "items": [
     {
@@ -157,7 +157,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-22T20:06:30+09:00",
+  "updated_at": "2026-11-22T20:07:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -398,6 +398,12 @@
       "actor": "koudai",
       "action": "🌰 ごはん（くるみ）",
       "note": "耕大さんから「くるみ」をプレゼント！おなか100%になってニコニコです♪"
+    },
+    {
+      "time": "2026-11-22 20:07",
+      "actor": "hong",
+      "action": "🐟 ごはん（餵飯）",
+      "note": "虹さんからもおいしいお魚のごはん！耕大さんのくるみに続いてお腹いっぱい、ごきげん85%に♪"
     }
   ],
   "current_friend": null
