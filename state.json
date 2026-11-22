@@ -5,16 +5,16 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 40,
+  "xp": 55,
   "xp_next": 350,
   "stats": {
-    "hunger": 28,
-    "mood": 55,
+    "hunger": 100,
+    "mood": 70,
     "clean": 52,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 20,
+    "koudai": 21,
     "hong": 11
   },
   "items": [
@@ -157,7 +157,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-22T20:05:07+09:00",
+  "updated_at": "2026-11-22T20:06:30+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -392,6 +392,12 @@
       "actor": "both",
       "action": "🦊 お友達来訪（こんた）",
       "note": "きつねの「こんた」くんが遊びに来ました！秋の香りの焼き栗を分け合ってごきげんアップ♪"
+    },
+    {
+      "time": "2026-11-22 20:06",
+      "actor": "koudai",
+      "action": "🌰 ごはん（くるみ）",
+      "note": "耕大さんから「くるみ」をプレゼント！おなか100%になってニコニコです♪"
     }
   ],
   "current_friend": null
