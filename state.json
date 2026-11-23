@@ -5,17 +5,17 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 90,
+  "xp": 110,
   "xp_next": 350,
   "stats": {
     "hunger": 64,
-    "mood": 75,
-    "clean": 28,
+    "mood": 85,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
     "koudai": 21,
-    "hong": 12
+    "hong": 13
   },
   "items": [
     {
@@ -164,7 +164,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-23T14:01:40+09:00",
+  "updated_at": "2026-11-23T15:22:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -417,6 +417,12 @@
       "actor": "both",
       "action": "🐰 お友達来訪（もも）",
       "note": "うさぎの「もも」ちゃんが遊びに来ました！甘いおやつタイムでクルミちゃんもにっこり♪"
+    },
+    {
+      "time": "2026-11-23 15:22",
+      "actor": "hong",
+      "action": "🫧 おふろ（ももちゃんと一緒♪）",
+      "note": "虹さんがクルミちゃんとうさぎのももちゃんを、ふたり一緒にあわあわのお風呂に入れてくれました！ふわもこ泡まみれでぽかぽか、せいけつ100%です♪"
     }
   ],
   "current_friend": {
