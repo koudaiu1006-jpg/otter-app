@@ -5,12 +5,12 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 70,
+  "xp": 90,
   "xp_next": 350,
   "stats": {
-    "hunger": 76,
-    "mood": 70,
-    "clean": 36,
+    "hunger": 64,
+    "mood": 75,
+    "clean": 28,
     "bond": 100
   },
   "care_counts": {
@@ -115,6 +115,13 @@
       "by": "koudai",
       "memory": "耕大さんが和室にルンバを導入！上に乗ってクルクル回るのがお気に入り♪",
       "at": "2026-11-21 17:05"
+    },
+    {
+      "name": "🍓 いちご大福",
+      "emoji": "🍓",
+      "by": "both",
+      "memory": "お友達のうさぎ「もも」が遊びに来たときのおみやげ♪",
+      "at": "2026-11-23 14:01"
     }
   ],
   "avatars": {
@@ -157,7 +164,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-23T11:01:05+09:00",
+  "updated_at": "2026-11-23T14:01:40+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -404,7 +411,20 @@
       "actor": "hong",
       "action": "🐟 ごはん（栄養たっぷりスペシャルお魚プレート）",
       "note": "虹さんから栄養満点のお魚＆お野菜プレート！耕大さんのくるみに続いてお腹いっぱい、ごきげん90%で元気いっぱいです♪"
+    },
+    {
+      "time": "2026-11-23 14:01",
+      "actor": "both",
+      "action": "🐰 お友達来訪（もも）",
+      "note": "うさぎの「もも」ちゃんが遊びに来ました！甘いおやつタイムでクルミちゃんもにっこり♪"
     }
   ],
-  "current_friend": null
+  "current_friend": {
+    "name": "もも",
+    "species": "うさぎ",
+    "emoji": "🐰",
+    "image_path": "otter-pet/friend-corgi-transparent.png",
+    "speech": "あそびにきたよ♪",
+    "until": "2026-11-23 17:01"
+  }
 }
