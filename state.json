@@ -5,12 +5,12 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 130,
+  "xp": 150,
   "xp_next": 350,
   "stats": {
-    "hunger": 76,
-    "mood": 80,
-    "clean": 84,
+    "hunger": 64,
+    "mood": 85,
+    "clean": 76,
     "bond": 100
   },
   "care_counts": {
@@ -164,7 +164,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-23T20:00:55+09:00",
+  "updated_at": "2026-11-24T08:01:30+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -429,7 +429,20 @@
       "actor": "koudai",
       "action": "🍰 ごはん（ケーキ・ももちゃんと一緒♪）",
       "note": "耕大さんから甘いケーキのプレゼント！うさぎのももちゃんと仲良く分け合って食べて、おなかもごきげんも100%になりました♪"
+    },
+    {
+      "time": "2026-11-24 08:01",
+      "actor": "both",
+      "action": "🐰 お友達来訪（もも）",
+      "note": "うさぎの「もも」ちゃんが遊びに来ました！甘いおやつタイムでクルミちゃんもにっこり♪"
     }
   ],
-  "current_friend": null
+  "current_friend": {
+    "name": "もも",
+    "species": "うさぎ",
+    "emoji": "🐰",
+    "image_path": "otter-pet/friend-rabbit-transparent.png",
+    "speech": "あそびにきたよ♪",
+    "until": "2026-11-24 11:01"
+  }
 }
