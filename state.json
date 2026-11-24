@@ -5,12 +5,12 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 230,
+  "xp": 250,
   "xp_next": 350,
   "stats": {
-    "hunger": 100,
+    "hunger": 88,
     "mood": 100,
-    "clean": 100,
+    "clean": 92,
     "bond": 100
   },
   "care_counts": {
@@ -171,7 +171,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-24T17:09:00+09:00",
+  "updated_at": "2026-11-24T20:01:31+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -478,14 +478,20 @@
       "actor": "koudai",
       "action": "🏡 広々和室へ増築リフォーム！",
       "note": "クルミちゃんとむぎちゃんの2匹でゆったり遊べるように、サウナもそのまま残した広々とした和室の大広間へリフォームしました♪"
+    },
+    {
+      "time": "2026-11-24 20:01",
+      "actor": "both",
+      "action": "🦊 お友達来訪（こんた）",
+      "note": "きつねの「こんた」くんが遊びに来ました！秋の香りの焼き栗を分け合ってごきげんアップ♪"
     }
   ],
   "current_friend": {
-    "name": "むぎ",
-    "species": "コーギー",
-    "emoji": "🐶",
+    "name": "こんた",
+    "species": "きつね",
+    "emoji": "🦊",
     "image_path": "otter-pet/friend-corgi-transparent.png",
-    "speech": "わんっ♪ クルミちゃんと いっしょに おうちにいるよ！",
-    "until": "ずっと一緒♪"
+    "speech": "あそびにきたよ♪",
+    "until": "2026-11-24 23:01"
   }
 }
