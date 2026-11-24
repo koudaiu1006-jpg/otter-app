@@ -5,7 +5,7 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 215,
+  "xp": 230,
   "xp_next": 350,
   "stats": {
     "hunger": 100,
@@ -15,7 +15,7 @@
   },
   "care_counts": {
     "koudai": 23,
-    "hong": 14
+    "hong": 15
   },
   "items": [
     {
@@ -171,7 +171,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-24T17:05:00+09:00",
+  "updated_at": "2026-11-24T17:05:30+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -460,6 +460,12 @@
       "actor": "koudai",
       "action": "♨️ サウナ設置（ととのいタイム）",
       "note": "耕大さんが和室に「ぽかぽかひのきサウナ」を設置！クルミちゃんもむぎちゃんも汗をかいてスッキリ、ごきげん100%・せいけつ100%・XP+30になりました♪"
+    },
+    {
+      "time": "2026-11-24 17:05",
+      "actor": "hong",
+      "action": "🫧 おふろ（むぎちゃんと一緒♪）",
+      "note": "虹さんがクルミちゃんとコーギーのむぎちゃんを、ふたり一緒にあわあわのお風呂に入れてくれました！サウナ上がりのお風呂でさらにぽかぽか、せいけつ100%です♪"
     }
   ],
   "current_friend": {
