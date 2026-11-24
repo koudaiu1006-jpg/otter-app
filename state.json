@@ -8,9 +8,9 @@
   "xp": 150,
   "xp_next": 350,
   "stats": {
-    "hunger": 64,
-    "mood": 85,
-    "clean": 76,
+    "hunger": 52,
+    "mood": 75,
+    "clean": 68,
     "bond": 100
   },
   "care_counts": {
@@ -164,7 +164,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-24T08:01:30+09:00",
+  "updated_at": "2026-11-24T11:00:28+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -437,12 +437,5 @@
       "note": "うさぎの「もも」ちゃんが遊びに来ました！甘いおやつタイムでクルミちゃんもにっこり♪"
     }
   ],
-  "current_friend": {
-    "name": "もも",
-    "species": "うさぎ",
-    "emoji": "🐰",
-    "image_path": "otter-pet/friend-rabbit-transparent.png",
-    "speech": "あそびにきたよ♪",
-    "until": "2026-11-24 11:01"
-  }
+  "current_friend": null
 }
