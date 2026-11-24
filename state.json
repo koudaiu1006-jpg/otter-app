@@ -5,7 +5,7 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 280,
+  "xp": 295,
   "xp_next": 350,
   "stats": {
     "hunger": 100,
@@ -14,7 +14,7 @@
     "bond": 100
   },
   "care_counts": {
-    "koudai": 23,
+    "koudai": 24,
     "hong": 17
   },
   "items": [
@@ -171,7 +171,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-24T20:08:00+09:00",
+  "updated_at": "2026-11-24T20:10:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -496,6 +496,12 @@
       "actor": "hong",
       "action": "🫧 おふろ（3匹みんな一緒♪）",
       "note": "虹さんがクルミちゃん、きつねのこんたくん、コーギーのむぎちゃんの3匹を一緒にあわあわのお風呂に入れてくれました！ふわもこ泡まみれでぽかぽか、せいけつ100%です♪"
+    },
+    {
+      "time": "2026-11-24 20:10",
+      "actor": "koudai",
+      "action": "🫧 おふろ",
+      "note": "耕大さんもあわあわお風呂に入れてくれました！虹さんのお風呂に続いて2度目のぽかぽかタイムで、みんなとろけそうに気持ちよさそうです♪"
     }
   ],
   "current_friend": {
@@ -503,7 +509,7 @@
     "species": "きつね",
     "emoji": "🦊",
     "image_path": "otter-pet/friend-fox-transparent.png",
-    "speech": "あわあわでぽかぽか！きもちいい〜♪",
+    "speech": "ふたりからのおふろ、さいこう〜♪",
     "until": "2026-11-24 23:01"
   }
 }
