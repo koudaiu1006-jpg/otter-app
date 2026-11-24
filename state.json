@@ -5,17 +5,17 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 170,
+  "xp": 185,
   "xp_next": 350,
   "stats": {
-    "hunger": 28,
-    "mood": 70,
+    "hunger": 100,
+    "mood": 80,
     "clean": 52,
     "bond": 100
   },
   "care_counts": {
     "koudai": 22,
-    "hong": 13
+    "hong": 14
   },
   "items": [
     {
@@ -164,7 +164,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-24T17:00:44+09:00",
+  "updated_at": "2026-11-24T17:03:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -441,6 +441,12 @@
       "actor": "both",
       "action": "🐶 お友達来訪（むぎ）",
       "note": "コーギーの「むぎ」ちゃんが遊びに来ました！しっぽをふりふり一緒に遊んでごきげんアップ♪"
+    },
+    {
+      "time": "2026-11-24 17:03",
+      "actor": "hong",
+      "action": "🐟 ごはん（むぎちゃんと一緒♪）",
+      "note": "虹さんがクルミちゃんとコーギーのむぎちゃんにおいしいごはんをあげてくれました！ふたり仲良くもぐもぐ食べて、おなか100%・ごきげん80%になりました♪"
     }
   ],
   "current_friend": {
