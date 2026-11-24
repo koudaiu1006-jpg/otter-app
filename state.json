@@ -5,17 +5,17 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 265,
+  "xp": 280,
   "xp_next": 350,
   "stats": {
     "hunger": 100,
     "mood": 100,
-    "clean": 92,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
     "koudai": 23,
-    "hong": 16
+    "hong": 17
   },
   "items": [
     {
@@ -171,7 +171,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-24T20:06:30+09:00",
+  "updated_at": "2026-11-24T20:08:00+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -490,6 +490,12 @@
       "actor": "hong",
       "action": "🐟 ごはん（3匹みんな一緒♪）",
       "note": "虹さんがクルミちゃん、きつねのこんたくん、コーギーのむぎちゃんの3匹みんなにおいしいごはんをあげてくれました！みんな仲良くもぐもぐ食べておなか100%です♪"
+    },
+    {
+      "time": "2026-11-24 20:08",
+      "actor": "hong",
+      "action": "🫧 おふろ（3匹みんな一緒♪）",
+      "note": "虹さんがクルミちゃん、きつねのこんたくん、コーギーのむぎちゃんの3匹を一緒にあわあわのお風呂に入れてくれました！ふわもこ泡まみれでぽかぽか、せいけつ100%です♪"
     }
   ],
   "current_friend": {
@@ -497,7 +503,7 @@
     "species": "きつね",
     "emoji": "🦊",
     "image_path": "otter-pet/friend-fox-transparent.png",
-    "speech": "もぐもぐ！おいしくてしあわせ〜♪",
+    "speech": "あわあわでぽかぽか！きもちいい〜♪",
     "until": "2026-11-24 23:01"
   }
 }
