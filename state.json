@@ -5,12 +5,12 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 6,
-  "xp": 295,
+  "xp": 315,
   "xp_next": 350,
   "stats": {
-    "hunger": 64,
-    "mood": 70,
-    "clean": 76,
+    "hunger": 52,
+    "mood": 75,
+    "clean": 68,
     "bond": 100
   },
   "care_counts": {
@@ -129,6 +129,13 @@
       "by": "koudai",
       "memory": "耕大さんが和室にミニサウナを設置！むぎちゃんと一緒にととのってぽかぽか♪",
       "at": "2026-11-24 17:05"
+    },
+    {
+      "name": "🍡 もちもちお団子",
+      "emoji": "🍡",
+      "by": "both",
+      "memory": "お友達の白もちカワウソ「しらたま」が遊びに来たときのおみやげ♪",
+      "at": "2026-11-25 17:03"
     }
   ],
   "avatars": {
@@ -171,7 +178,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-25T14:04:10+09:00",
+  "updated_at": "2026-11-25T17:03:55+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -502,14 +509,20 @@
       "actor": "koudai",
       "action": "🫧 おふろ",
       "note": "耕大さんもあわあわお風呂に入れてくれました！虹さんのお風呂に続いて2度目のぽかぽかタイムで、みんなとろけそうに気持ちよさそうです♪"
+    },
+    {
+      "time": "2026-11-25 17:03",
+      "actor": "both",
+      "action": "🦭 お友達来訪（しらたま）",
+      "note": "白もちカワウソの「しらたま」ちゃんが遊びに来ました！おそろいの丸いしっぽでごろごろしてごきげんアップ♪"
     }
   ],
   "current_friend": {
-    "name": "むぎ",
-    "species": "コーギー",
-    "emoji": "🐶",
+    "name": "しらたま",
+    "species": "白もちカワウソ",
+    "emoji": "🦭",
     "image_path": "otter-pet/friend-corgi-transparent.png",
-    "speech": "わんっ♪ クルミちゃんと いっしょに おうちにいるよ！",
-    "until": "ずっと一緒♪"
+    "speech": "あそびにきたよ♪",
+    "until": "2026-11-25 20:03"
   }
 }
