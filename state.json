@@ -5,15 +5,15 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 7,
-  "xp": 350,
+  "xp": 380,
   "xp_next": 450,
-  "coins": 100,
-  "scene": "washitsu",
-  "scene_until": null,
+  "coins": 0,
+  "scene": "onsen",
+  "scene_until": "2026-11-26 20:42",
   "stats": {
-    "hunger": 40,
-    "mood": 50,
-    "clean": 28,
+    "hunger": 100,
+    "mood": 100,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
@@ -139,6 +139,13 @@
       "by": "both",
       "memory": "お友達の白もちカワウソ「しらたま」が遊びに来たときのおみやげ♪",
       "at": "2026-11-25 17:03"
+    },
+    {
+      "name": "🍁 もみじ温泉まんじゅう",
+      "emoji": "♨️",
+      "by": "koudai",
+      "memory": "耕大さんがおさかなコイン100枚で連れて行ってくれた紅葉の露天風呂！むぎちゃんとぽかぽか温まって、おなか・せいけつ・ごきげん全回復したよ♪",
+      "at": "2026-11-26 17:42"
     }
   ],
   "avatars": {
@@ -181,7 +188,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-26T17:20:00+09:00",
+  "updated_at": "2026-11-26 17:42",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -536,6 +543,12 @@
       "actor": "system",
       "action": "🪙 おさかなコイン スタート",
       "note": "お世話でたまる「おさかなコイン」がスタート！お祝いボーナスで100コイン プレゼントしました♪ おみせと みんなで温泉旅行が ひらきました"
+    },
+    {
+      "time": "2026-11-26 17:42",
+      "actor": "koudai",
+      "action": "♨️ みんなで温泉旅行",
+      "note": "耕大さんがおさかなコイン100枚を使って、クルミちゃんとむぎちゃんを紅葉の露天風呂へ連れて行ってくれました！ぽかぽか温まっておなか・せいけつ・ごきげん全部100%＆おみやげ「🍁 もみじ温泉まんじゅう」をGETしました♪"
     }
   ],
   "current_friend": {
