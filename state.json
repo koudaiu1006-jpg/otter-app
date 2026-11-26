@@ -5,15 +5,15 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 7,
-  "xp": 420,
+  "xp": 440,
   "xp_next": 450,
   "coins": 40,
   "scene": "washitsu",
   "scene_until": null,
   "stats": {
-    "hunger": 100,
+    "hunger": 88,
     "mood": 100,
-    "clean": 100,
+    "clean": 92,
     "bond": 100
   },
   "care_counts": {
@@ -188,7 +188,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-27T05:43:00+09:00",
+  "updated_at": "2026-11-27T08:03:58+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
@@ -561,14 +561,20 @@
       "actor": "hong",
       "action": "🐟 ごはん（むぎちゃんと一緒♪）",
       "note": "お風呂上がりのクルミちゃんとむぎちゃんに、虹さんがおいしい朝ごはんをあげてくれました！おなか・ごきげん・せいけつ・なつき度すべて100%＆おさかなコイン+20枚（合計40枚）です♪"
+    },
+    {
+      "time": "2026-11-27 08:03",
+      "actor": "both",
+      "action": "🐦 お友達来訪（ゆきみ）",
+      "note": "もふもふのシマエナガ「ゆきみ」ちゃんが遊びに来ました！クルミちゃんとおしゃべりしてごきげんアップ♪"
     }
   ],
   "current_friend": {
-    "name": "むぎ",
-    "species": "コーギー",
-    "emoji": "🐶",
-    "image_path": "otter-pet/friend-corgi-transparent.png",
-    "speech": "わんっ♪ クルミちゃんと いっしょに おうちにいるよ！",
-    "until": "ずっと一緒♪"
+    "name": "ゆきみ",
+    "species": "シマエナガ",
+    "emoji": "🐦",
+    "image_path": "otter-pet/friend-shimaenaga-transparent.png",
+    "speech": "ちゅん♪ クルミちゃんのおへや あったかいね！",
+    "until": "2026-11-27 11:03"
   }
 }
