@@ -5,19 +5,19 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 7,
-  "xp": 460,
+  "xp": 480,
   "xp_next": 450,
-  "coins": 40,
+  "coins": 60,
   "scene": "washitsu",
   "scene_until": null,
   "stats": {
-    "hunger": 28,
-    "mood": 60,
+    "hunger": 100,
+    "mood": 80,
     "clean": 52,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 25,
+    "koudai": 26,
     "hong": 20
   },
   "items": [
@@ -582,5 +582,13 @@
     "image_path": "otter-pet/friend-corgi-transparent.png",
     "speech": "わんっ♪ クルミちゃんと いっしょに おうちにいるよ！",
     "until": "ずっと一緒♪"
-  }
+  },
+  "log": [
+    {
+      "time": "2026-11-28 08:29",
+      "actor": "koudai",
+      "action": "🐟 ごはん",
+      "note": "耕大さんが朝のお仕事先からおいしいお魚ごはんをあげてくれました！おなか100%・ごきげん80%・おさかなコイン+20枚（合計60枚）です♪"
+    }
+  ]
 }
