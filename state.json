@@ -5,19 +5,19 @@
   "stage": "adult",
   "stage_label": "おとな期",
   "level": 7,
-  "xp": 480,
+  "xp": 500,
   "xp_next": 450,
-  "coins": 60,
+  "coins": 80,
   "scene": "washitsu",
   "scene_until": null,
   "stats": {
     "hunger": 100,
-    "mood": 80,
-    "clean": 52,
+    "mood": 100,
+    "clean": 100,
     "bond": 100
   },
   "care_counts": {
-    "koudai": 26,
+    "koudai": 27,
     "hong": 20
   },
   "items": [
@@ -589,6 +589,12 @@
       "actor": "koudai",
       "action": "🐟 ごはん",
       "note": "耕大さんが朝のお仕事先からおいしいお魚ごはんをあげてくれました！おなか100%・ごきげん80%・おさかなコイン+20枚（合計60枚）です♪"
+    },
+    {
+      "time": "2026-11-28 08:29",
+      "actor": "koudai",
+      "action": "🫧 おふろ",
+      "note": "続けて耕大さんがあわあわお風呂に入れてくれました！おなか・ごきげん・せいけつ・なつき度すべて100%＆おさかなコイン+20枚（合計80枚）です♪"
     }
   ]
 }
