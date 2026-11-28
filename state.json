@@ -11,9 +11,9 @@
   "scene": "washitsu",
   "scene_until": null,
   "stats": {
-    "hunger": 88,
-    "mood": 90,
-    "clean": 92,
+    "hunger": 76,
+    "mood": 80,
+    "clean": 84,
     "bond": 100
   },
   "care_counts": {
@@ -188,7 +188,7 @@
   "avatar_path": "otter-pet/avatar-adult-mochi-transparent.png",
   "background_path": "otter-pet/bg-washitsu.png",
   "created_at": "2026-11-14T12:28:00+09:00",
-  "updated_at": "2026-11-28T11:03:33+09:00",
+  "updated_at": "2026-11-28T14:03:34+09:00",
   "logs": [
     {
       "time": "2026-11-14 12:28",
